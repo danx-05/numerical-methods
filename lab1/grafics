@@ -1,0 +1,30 @@
+import numpy as np
+import matplotlib.pyplot as plt
+t = np.arange(0, 2 * 3.15 , 0.01)
+x = np.cos(t)
+y = np.sin(t)
+
+print(x)
+plt.xlabel('Ось х') #Подпись для оси х
+plt.ylabel('Ось y') #Подпись для оси y
+plt.title('Первый график') #Название
+plt.plot(x, y, color='green', marker='o', markersize=2)
+plt.show()
+
+
+from mpl_toolkits.mplot3d import axes3d
+import matplotlib.pyplot as plt
+import numpy as np
+n = 100
+th = np.linspace(0, 2 * np.pi, n)
+phi = np.linspace(0, 2 * np.pi, n)
+th, phi = np.meshgrid(th, phi)
+x = np.sin(th) * np.cos(phi)
+y = np.sin(th) * np.sin(phi)
+z = np.cos(th)
+fig = plt.figure(figsize=(8,8))
+ax = fig.add_subplot(111, projection = '3d')
+ax.plot_surface(x,y,z)
+plt.show()
+
+
