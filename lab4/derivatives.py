@@ -1,3 +1,4 @@
+# считает различные производные: правосторонние, левосторонние, вторую производную разностным методом
 import math
 import numpy as np
 from matplotlib import pyplot as plt
