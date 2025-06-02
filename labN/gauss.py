@@ -1,3 +1,4 @@
+# программа принимает фотографию, и возвращает размытую фотографию с заданными параметрами: kernel, sigma 
 import math
 import time
 from numba import jit
